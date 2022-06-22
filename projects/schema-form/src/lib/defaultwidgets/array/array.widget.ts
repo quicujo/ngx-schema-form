@@ -6,7 +6,7 @@ import { FormProperty } from '../../model';
 @Component({
   selector: 'sf-array-widget',
   template: `<div class="widget form-group">
-	<label [attr.for]="id" class="horizontal control-label">
+	<label [attr.for]="id" class="horizontal control-label" *ngIf="schema.title">
 		{{ schema.title }}
 	</label>
 	<span *ngIf="schema.description" class="formHelp">{{schema.description}}</span>

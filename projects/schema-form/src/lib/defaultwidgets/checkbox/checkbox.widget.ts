@@ -5,7 +5,7 @@ import { ControlWidget } from '../../widget';
 @Component({
   selector: 'sf-checkbox-widget',
   template: `<div class="widget form-group">
-    <label [attr.for]="id" class="horizontal control-label">
+    <label [attr.for]="id" class="horizontal control-label" *ngIf="schema.title">
         {{ schema.title }}
     </label>
 	<div *ngIf="schema.type!='array'" class="checkbox">
